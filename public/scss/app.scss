@@ -1,0 +1,46 @@
+@import './variables';
+@import './bootstrap';
+@import './root';
+@import './fonts';
+body {
+	font-family: 'Poppins';
+	background-color: #f5f5f5;
+	position: relative;
+	max-height: 100vh;
+	// overflow: hidden;
+}
+
+.container {
+	max-width: $container-max-width; // use the variable in the container's max-width property
+}
+
+.text-ellipsis {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.VerticalScroller {
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: 10px;
+		background-color: #ececec;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #d6d6d6;
+		border-radius: 10px;
+	}
+
+	// &::-webkit-scrollbar-thumb:hover {
+	// 	background: #029c50;
+	// }
+
+	.custom-control-label {
+		color: var(--secondary);
+	}
+}
